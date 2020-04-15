@@ -31,6 +31,7 @@ make install-config
 make install-inetd
 make install-init
 
+# vi /etc/xinetd.d/nrpe, set the disable to no
 
 echo "step4, restart xinetd"
 service xinetd restart
