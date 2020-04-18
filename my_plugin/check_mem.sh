@@ -1,18 +1,19 @@
 #!/bin/bash
-#########################################################################
-# File Name: check_mem.sh
-# Author: liuyang91
-# mail: liu-yang91@qq.com
-# Created Time: Sat Apr 18 09:28:11 2020
-#########################################################################
+
+# filename: check_mem.sh
+# Copyright 2020, LiuYang <liu-yang91@qq.com>
+#
+# This script is free software: you can redistribute it and/or modify
+# it under the terms of the GNU General Public License as published by
+# the Free Software Foundation, either version 3 of the License, or
+# (at your option) any later version.
 
 function help {
-    echo -e "\nUseage: This plugin shows the % of used MEM, using tool free\n
+    echo -e "\nUsage: This plugin shows the % of used MEM, using tool 'free'\n
     -w <integer>\tIf the % of used MEM is below CRITICAL and above WARN, returns WARN state\n
     -c <integer>\tIf the % of used MEM is above CRITICAL, returns CRITICAL state\n"
     exit -1
 }
-
 
 while getopts "w:c:h" OPT; do
     case $OPT in
