@@ -7,7 +7,6 @@ docker run -d --name nagios1 --rm   \
 	-v ${NGS_PATH}var:/opt/nagios/var/   \
 	-v ${GRAPH_PATH}custom_plugin:/opt/Custom-Nagios-Plugins \
 	-v ${GRAPH_PATH}nagiosgraph-rrd:/opt/nagiosgraph/var/rrd \
-       	-p 0.0.0.0:8080:80 muyiziye/my_nagios:version-1.0.0
-	#-v ${GRAPH_PATH}nagiosgraph-etc:/opt/nagiosgraph/etc \
+       	-p 0.0.0.0:443:443 muyiziye/my_nagios:version-1.0.1
 
 
