@@ -1,6 +1,5 @@
 #!/bin/bash
-NGS_PATH="/home/ly/data/code/my_nagios/nagios/"
-#GRAPH_PATH="/home/ly/data/code/my_nagios/nagios_graph/"
+NGS_PATH=`pwd`"/nagios/"
 
 docker run -d --name nagios1 --rm   \
 	-v ${NGS_PATH}etc:/opt/nagios/etc/   \
