@@ -1,1 +1,3 @@
 /nagios*
+/replace_files*
+run_nagios.sh

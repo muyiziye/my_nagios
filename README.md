@@ -8,3 +8,6 @@ default account: nagiosadmin:nagios
 
 2020/04/18
 Use https to login Nagios
+
+2020/04/25
+Add graphios command into Nagios
